@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+/* .body{
+    min-width: 900px;
+} */
+.d-none{
+    display: none;
+}
+.d-flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+.title{
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+}
+.container{
+    max-width: 900px;
+    padding: 0 25px;
+    max-height: max-content;
+    margin: 0 auto;
+}
+
+
+.MyWeek_container{
+    max-width: 1200px;
+    max-height: max-content;
+    margin: 0 auto;
+}
+.MainLinks{
+    color: #000;
+    transition: 0.5s;   
+}
+.MainLinks:hover{
+    font-family: "Gilroy-Bold";
+}
+/* === header === */
+/* === header_nav === */
+.header_ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.header_nav{
+    display: flex;
+    flex-direction: column;
+}
+.header_nav::after{
+    content: "";
+    width: 100%;
+    border: 1px solid #828282;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.header_link:hover{
+    color: #070707;
+    /* font-style: 25px; */
+}
+.header_link{
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+    transition-duration: 0.5s;
+}
+/* === /header_nav === */
+.warning{
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+    /* background: rgba(255, 0, 0, 0.781); */
+    color: red;
+    font-family: "Gilroy-Bold";
+}
+.warning_icon{
+    padding-right: 10px;
+}
+/* === header_mainContent === */
+.header_mainContent{
+    padding: 40px 0 30px 0;
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    max-width: 100%;
+}
+.header_name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Gilroy-Bold';
+    font-size: 47.3392px;
+    line-height: 59px;
+    color: #070707;
+}
+.header_basicInf{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Gilroy-Semibold';
+    font-size: 20px;
+    line-height: 22px;
+    color: #070707;
+}
+.header_langInd{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Gilroy-Bold';
+    font-size: 19px;
+    color: #828282;
+    transform: rotate(-90deg);
+    margin-left: -40px;
+}
+.header_lang{
+    margin: 4px 5px 0 5px;
+    display: flex;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    color: #828282;
+}
+.header_lang:hover{
+    color: #070707;
+    transition: 0.5s;
+}
+.header_langBorder{
+    margin-bottom: 2px;
+}
+.header_langBorder:hover{
+    cursor: default;
+}
+.header_photo{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.header_img{
+    width: 100%;
+    height: 400px;
+}
+/* === /header_mainContent === */
+/* === /header === */
+/* === main === */
+/* === AboutMe === */
+.AboutMe{
+    background: #F6F6F6;
+    padding: 180px 0 105px 0;
+}
+.AboutMe_title{
+    margin-bottom: 20px;
+}
+.AboutMe_description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.AboutMe_paragraphes{
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+    max-width: 485px;
+    margin-bottom: 50px;
+}
+.AboutMe_paragraphes:nth-child(3){
+    margin-bottom: 0;
+}
+/* === /AboutMe === */
+/* === Skills === */
+.Skills{
+    padding: 90px 0 110px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Skills_title{
+    margin-bottom: 70px;
+}
+.Skills_descripiton{
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+    margin-bottom: 90px;
+}
+.Skills_cardList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.Skills_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    max-width: max-content;
+}
+.Skills_cardImg{
+    margin-bottom: 5px;
+}
+.Skills_cardText{
+    font-family: 'Gilroy-Bold';
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+    margin-bottom: 15px;
+    max-width: 70px;
+    min-height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Skills_star_icon{
+    font-size: 20px;
+}
+/* === /Skills === */
+/* === MyWeek === */
+.MyWeek{
+    background: #F6F6F6;
+    padding: 110px 0 95px 0;
+}
+.MyWeek_title{
+    margin-bottom: 40px;
+}
+.MyWeek_shedule{
+    display: grid;
+    grid-template-columns: 9% repeat(7, 13%);
+    grid-template-rows: repeat(13, 60px);
+    margin-bottom: 50px;
+}
+.MyWeek_CommonClass{
+    padding: 10px;
+    border: 1px solid #000;
+    font-family: "Gilroy-Medium";
+    text-align: center;
+    color: #070707;
+}
+.MyWeek_time, .MyWeek_day{
+    font-family: "Gilroy-Bold";
+}
+.MySheduleUl{
+    margin: 0;
+    padding: 0;
+}
+.MysheduleLi{
+    margin-bottom: 10px;
+}
+.MySheduleLiTitle{
+    display: flex;
+    font-family: "Gilroy-Bold";
+    font-size: 25px;
+}
+.MySheduleLiName{
+    display: flex;
+}
+.MySheduleItem{
+    font-family: "Gilroy-Regular";
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-top: none;
+    margin-bottom: 5px;
+    max-width: max-content;
+}
+.MySheduleItemUntext{
+    font-family: "Gilroy-RegularItalic";
+    margin-left: 25px;
+}
+.MySheduleLiTitle{
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 0px 0;
+}
+.carousel-item{
+    height: 650px;
+    max-width: 1200px;
+}
+.carousel-caption{
+    background: rgba(0, 0, 0, 0.548);
+    border-radius: 5px;
+}
+.carousel-controllers:hover{
+    background: rgba(0, 0, 0, 0.548);
+    transition: 1s;
+    
+}
+/* === /MyWeek === */
+/* === Contact === */
+.Contact{
+    background: #fff;
+}
+.Contact_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 120px;
+    padding-top: 115px;
+}
+.Contact_title{
+    margin-bottom: 20px;
+}
+.Contact_description{
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+    margin-bottom: 25px;
+}
+.Contact_btn{
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #070707;
+    padding: 15px 30px;
+    border-radius: 25px;
+    margin-bottom: 90px;
+    transition: 0.5s;
+}
+.Contact_btn:hover{
+    border: 1px solid #070707;
+    color: #070707;
+    background: #FFFFFF;
+}
+.Contact_iconList{
+    margin-bottom: 45px;
+}
+.Contact_icon{
+    font-size: 40px;
+    color: #070707;
+    margin: 0 30px;
+    transition: 0.5s;
+}
+.Contact_underDescription{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gilroy-Medium';
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+}
+.Contact_telegramIcn:hover{
+    color: #28afea;
+}
+.Contact_instagramIcn:hover{
+    color: rgb(253, 29, 29);
+}
+.Contact_emailIcn:hover{
+    color: rgb(253, 29, 29);
+}
+.Contact_phoneIcn:hover{
+    color: #0077ff;
+}
+/* === /Contact === */
+/* === /main === */

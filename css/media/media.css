@@ -1,0 +1,50 @@
+
+
+
+@media (max-width:950px) {
+    .carousel-item{
+        max-width: 900px;
+        max-height: 650px;
+    }
+    .Skills_cardList{
+        grid-template-columns: 1fr 1fr;
+        /* margin: 0 auto;
+        align-self: center;
+        align-items: center; */
+    }
+    .Skills_card{
+        max-width: 100%;
+    }
+    .Skills_card:nth-child(1),
+    .Skills_card:nth-child(2){
+        margin-bottom: 40px;
+    }
+    .MyWeek_CommonClass{
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:900px) {
+    .container{
+        max-width: 720px;
+    }
+}
+@media (max-width:720px) {
+    .container{
+        max-width: 640px;
+    }
+    .carousel-item{
+        max-height: 400px;
+    }
+    .carousel-itemImg{
+        height: 400px;
+    }
+    .carousel-itembuttons{
+        height: 400px;
+    }
+    .header_basicInf{
+        justify-content: center;
+    }
+}
